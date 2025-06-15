@@ -1,0 +1,21 @@
+{
+  "name": "Inter de Verdun App",
+  "short_name": "InterVerdun",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#f7f9fb",
+  "theme_color": "#75bbf0",
+  "description": "App oficial del Inter de Verdun para apuntarse a los partidos.",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
