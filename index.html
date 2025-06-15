@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inter de Verdun - Web Oficial</title>
+    <meta name="description" content="Web oficial del equipo de fútbol Inter de Verdun de Barcelona. Convocatorias, resultados, calendario y votación de MVP.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="hero">
+        <nav>
+            <a href="#" class="logo">Inter de Verdun</a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#partido">Convocatoria</a></li>
+                <li><a href="#calendario">Calendario</a></li>
+                <li><a href="#mvp">MVP</a></li>
+                <li><a href="#plantilla">Plantilla</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <button class="menu-hamburguesa" id="menu-btn"><i class="fas fa-bars"></i></button>
+        </nav>
+        <div class="hero-content">
+            <h1>Inter de Verdun</h1>
+            <p class="lema">FUERZA Y HONOR</p>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="partido" class="section">
+            <h2>Próximo Partido y Convocatoria</h2>
+            <div class="partido-container">
+                <div class="partido-info">
+                    <h3>Jornada 15</h3>
+                    <p class="rival">Inter de Verdun vs [Nombre del Rival]</p>
+                    <p class="fecha-hora"><i class="fas fa-calendar-alt"></i> Miércoles, 18 de Junio de 2025 - 21:00h</p>
+                    <p class="lugar"><i class="fas fa-map-marker-alt"></i> Camp de Fútbol de la Trinitat</p>
+                </div>
+                <div class="convocatoria">
+                    <h3><i class="fas fa-clipboard-list"></i> Convocados</h3>
+                    <ul>
+                        <li><i class="fas fa-tshirt"></i> Héctor Pérez</li>
+                        <li><i class="fas fa-tshirt"></i> Daniel Llamas</li>
+                        <li><i class="fas fa-tshirt"></i> Sergio Delrio</li>
+                        <li><i class="fas fa-tshirt"></i> Marc Busom</li>
+                        <li><i class="fas fa-tshirt"></i> David Plans Serna</li>
+                        <li><i class="fas fa-tshirt"></i> Pau Villodres Castillo</li>
+                        <li><i class="fas fa-tshirt"></i> Andreu Villaplana</li>
+                        <li><i class="fas fa-tshirt"></i> Dani Bermúdez Morales</li>
+                        <li><i class="fas fa-tshirt"></i> Raul López García</li>
+                        <li><i class="fas fa-tshirt"></i> Adri Perez Gruñeiro</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="mvp" class="section bg-light">
+            <h2>MVP de la Jornada</h2>
+            <p>¡Tu voto decide quién fue el jugador más valioso del último partido!</p>
+            <a href="https://strawpoll.com/" target="_blank" class="cta-button mvp-button">
+                <i class="fas fa-vote-yea"></i> ¡VOTA AQUÍ AL MVP!
+            </a>
+            <div class="salon-fama">
+                <h3><i class="fas fa-trophy"></i> Salón de la Fama</h3>
+                <div class="mvp-ganador">
+                    <p><strong>Jornada 14:</strong> Héctor Pérez</p>
+                </div>
+                <div class="mvp-ganador">
+                    <p><strong>Jornada 13:</strong> Sergio Delrio</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="calendario" class="section">
+            <h2>Calendario y Resultados</h2>
+            <table class="calendario-tabla">
+                <thead>
+                    <tr>
+                        <th>Jornada</th>
+                        <th>Fecha</th>
+                        <th>Partido</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>14</td>
+                        <td>11/06/2025</td>
+                        <td>Equipo Rival 1 vs Inter de Verdun</td>
+                        <td>2 - 5</td>
+                    </tr>
+                     <tr class="proximo">
+                        <td>15</td>
+                        <td>18/06/2025</td>
+                        <td>Inter de Verdun vs Equipo Rival 2</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                        <td>25/06/2025</td>
+                        <td>Equipo Rival 3 vs Inter de Verdun</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <section id="plantilla" class="section bg-light">
+            <h2>Plantilla 2024/2025</h2>
+            <div class="grid-plantilla">
+                <div class="jugador-card">
+                    <img src="https://via.placeholder.com/150/60A3D9/FFFFFF?text=1" alt="Foto de David">
+                    <h3>David</h3>
+                    <p>Plans Serna</p>
+                    <p class="dorsal">1</p>
+                </div>
+                <div class="jugador-card">
+                    <img src="https://via.placeholder.com/150/60A3D9/FFFFFF?text=2" alt="Foto de Poms">
+                    <h3>Poms</h3>
+                    <p>Pomares López</p>
+                    <p class="dorsal">2</p>
+                </div>
+                <div class="jugador-card">
+                    <img src="https://via.placeholder.com/150/60A3D9/FFFFFF?text=3" alt="Foto de Pau">
+                    <h3>Pau</h3>
+                    <p>Villodres Castillo</p>
+                    <p class="dorsal">3</p>
+                </div>
+                <div class="jugador-card">
+                    <img src="https://via.placeholder.com/150/60A3D9/FFFFFF?text=4" alt="Foto de El Porras">
+                    <h3>El Porras</h3>
+                    <p>Porras Ramírez</p>
+                    <p class="dorsal">4</p>
+                </div>
+                <div class="jugador-card">
+                    <img src="https://via.placeholder.com/150/60A3D9/FFFFFF?text=7" alt="Foto de Pitbull">
+                    <h3>Pitbull</h3>
+                    <p>Andreu Villaplana</p>
+                    <p class="dorsal">7</p>
+                </div>
+                <div class="jugador-card">
+                    <img src="https://via.placeholder.com/150/60A3D9/FFFFFF?text=10" alt="Foto de Dani">
+                    <h3>Dani</h3>
+                    <p>Bermúdez Morales</p>
+                    <p class="dorsal">10</p>
+                </div>
+                <div class="jugador-card">
+                    <img src="https://via.placeholder.com/150/60A3D9/FFFFFF?text=11" alt="Foto de Jarras">
+                    <h3>Jarras</h3>
+                    <p>Carrasquilla Oñate</p>
+                    <p class="dorsal">11</p>
+                </div>
+                <div class="jugador-card">
+                    <img src="https://via.placeholder.com/150/60A3D9/FFFFFF?text=15" alt="Foto de Javier">
+                    <h3>Javier</h3>
+                    <p>García Perez</p>
+                    <p class="dorsal">15</p>
+                </div>
+                <div class="jugador-card">
+                    <img src="https://via.placeholder.com/150/60A3D9/FFFFFF?text=25" alt="Foto de Raul">
+                    <h3>Raul</h3>
+                    <p>López García</p>
+                    <p class="dorsal">25</p>
+                </div>
+                <div class="jugador-card">
+                    <img src="https://via.placeholder.com/150/60A3D9/FFFFFF?text=33" alt="Foto de Adri">
+                    <h3>Adri</h3>
+                    <p>Perez Gruñeiro</p>
+                    <p class="dorsal">33</p>
+                </div>
+                <div class="jugador-card">
+                    <img src="https://via.placeholder.com/150/60A3D9/FFFFFF?text=69" alt="Foto de Sergio">
+                    <h3>Sergio</h3>
+                    <p>Delrio</p>
+                    <p class="dorsal">69</p>
+                </div>
+                <div class="jugador-card">
+                    <img src="https://via.placeholder.com/150/60A3D9/FFFFFF?text=99" alt="Foto de Mordi">
+                    <h3>Mordi</h3>
+                    <p>Mordillo Ortega</p>
+                    <p class="dorsal">99</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section bg-dark">
+            <h2>Contacto</h2>
+            <p>¿Quieres unirte al equipo o patrocinarnos? ¡Contacta con nosotros!</p>
+            <a href="mailto:interdeverdun@email.com" class="email-link">interdeverdun@email.com</a>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/interdeverdunbcn/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://apuntamelo.com/grupo/2/605/2/2510/0" target="_blank" aria-label="Apuntamelo">
+                    <i class="fas fa-futbol"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Inter de Verdun. FUERZA Y HONOR.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
