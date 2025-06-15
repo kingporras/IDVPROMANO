@@ -383,3 +383,104 @@ footer {
     margin-top: 10px;
     display: block;
 }
+:root {
+    --color-azul-cielo: #75bbf0;
+    --color-dorado: #D4AF37;
+    --color-texto-oscuro: #2c3e50;
+    --color-fondo-claro: #f7f9fb;
+    --color-blanco: #ffffff;
+    --color-verde: #28a745;
+    --color-rojo: #dc3545;
+    --font-titulos: 'Montserrat', sans-serif;
+    --font-texto: 'Lato', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: var(--font-texto); color: var(--color-texto-oscuro); background-color: var(--color-fondo-claro); }
+h1, h2, h3 { font-family: var(--font-titulos); }
+
+header {
+    background-color: var(--color-azul-cielo);
+    color: var(--color-blanco);
+    padding: 15px 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo { font-size: 1.8em; }
+#user-info span { margin-right: 15px; font-weight: bold; }
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+#login-container { text-align: center; }
+#login-container h2 { font-size: 2.5em; color: var(--color-texto-oscuro); }
+#login-container p { margin-bottom: 30px; font-size: 1.2em; }
+
+.cta-button {
+    background-color: var(--color-dorado);
+    color: var(--color-blanco);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-family: var(--font-titulos);
+    font-size: 1.1em;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.cta-button:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+.cta-button.small { padding: 8px 15px; font-size: 0.9em; }
+
+.partido-card {
+    background-color: var(--color-blanco);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.partido-info .rival { font-family: var(--font-titulos); font-size: 1.5em; margin-bottom: 10px; }
+.partido-info .fecha-hora { font-size: 1.1em; margin-bottom: 20px; }
+.partido-info i { color: var(--color-dorado); margin-right: 8px; }
+
+.acciones-jugador { margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px; }
+.acciones-jugador button { margin: 5px; }
+.acciones-jugador .disponible { background-color: var(--color-verde); }
+.acciones-jugador .no-disponible { background-color: var(--color-rojo); }
+
+.listas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+.lista-convocados {
+    background-color: var(--color-blanco);
+    padding: 20px;
+    border-radius: 8px;
+}
+.lista-convocados h3 {
+    font-size: 1.2em;
+    color: var(--color-azul-cielo);
+    border-bottom: 2px solid var(--color-fondo-claro);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.lista-convocados ul { list-style: none; }
+.lista-convocados li {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+.lista-convocados li:last-child { border-bottom: none; }
+
+@media (max-width: 600px) {
+    .listas-container { grid-template-columns: 1fr; }
+}
