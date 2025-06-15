@@ -1,0 +1,385 @@
+/* ============================== */
+/* VARIABLES Y RESET     */
+/* ============================== */
+:root {
+    --color-azul-celeste: #60A3D9;
+    --color-dorado: #D4AF37;
+    --color-texto-oscuro: #2c3e50;
+    --color-fondo-claro: #f7f9fb;
+    --color-blanco: #ffffff;
+    --font-titulos: 'Montserrat', sans-serif;
+    --font-texto: 'Lato', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-texto);
+    color: var(--color-texto-oscuro);
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-titulos);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-dorado);
+}
+
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    color: var(--color-texto-oscuro);
+}
+
+.bg-light {
+    background-color: var(--color-fondo-claro);
+}
+
+.bg-dark {
+    background-color: var(--color-texto-oscuro);
+    color: var(--color-blanco);
+}
+.bg-dark h2, .bg-dark p {
+    color: var(--color-blanco);
+}
+.bg-dark a {
+    color: var(--color-dorado);
+}
+
+/* ============================== */
+/* HEADER Y NAVEGACIÓN       */
+/* ============================== */
+.hero {
+    background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url('https://via.placeholder.com/1500x800.png?text=Campo+de+Futbol') no-repeat center center/cover;
+    color: var(--color-blanco);
+    min-height: 80vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(44, 62, 80, 0.9);
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.logo {
+    font-family: var(--font-titulos);
+    font-weight: 900;
+    font-size: 1.8em;
+    color: var(--color-blanco);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: var(--color-blanco);
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.nav-links a:hover {
+    border-bottom-color: var(--color-dorado);
+}
+
+.menu-hamburguesa {
+    display: none;
+    font-size: 1.8em;
+    background: none;
+    border: none;
+    color: var(--color-blanco);
+    cursor: pointer;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4.5em;
+    font-weight: 900;
+    color: var(--color-blanco);
+}
+
+.hero-content .lema {
+    font-size: 2em;
+    color: var(--color-dorado);
+    font-family: var(--font-titulos);
+    margin-top: -10px;
+}
+
+/* ============================== */
+/* PARTIDO Y CONVOCATORIA      */
+/* ============================== */
+.partido-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.partido-info, .convocatoria {
+    background: var(--color-blanco);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 300px;
+}
+
+.partido-info h3, .convocatoria h3 {
+    color: var(--color-azul-celeste);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--color-fondo-claro);
+    padding-bottom: 10px;
+}
+
+.partido-info p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.partido-info .rival {
+    font-family: var(--font-titulos);
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+.partido-info i, .convocatoria i {
+    color: var(--color-dorado);
+    margin-right: 10px;
+}
+
+.convocatoria ul {
+    list-style: none;
+}
+
+.convocatoria li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* ============================== */
+/* MVP                */
+/* ============================== */
+.cta-button {
+    background-color: var(--color-dorado);
+    color: var(--color-blanco);
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-family: var(--font-titulos);
+    font-size: 1.3em;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.salon-fama {
+    margin-top: 50px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.salon-fama h3 {
+    color: var(--color-azul-celeste);
+}
+
+.mvp-ganador {
+    background: var(--color-blanco);
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border-left: 5px solid var(--color-dorado);
+}
+
+/* ============================== */
+/* CALENDARIO            */
+/* ============================== */
+.calendario-tabla {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.calendario-tabla th, .calendario-tabla td {
+    padding: 15px;
+    text-align: center;
+}
+
+.calendario-tabla thead {
+    background-color: var(--color-azul-celeste);
+    color: var(--color-blanco);
+    font-family: var(--font-titulos);
+}
+
+.calendario-tabla tbody tr:nth-child(even) {
+    background-color: var(--color-fondo-claro);
+}
+
+.calendario-tabla tr.proximo {
+    background-color: #fff3cd; /* Un amarillo suave para destacar */
+    font-weight: bold;
+}
+
+/* ============================== */
+/* PLANTILLA             */
+/* ============================== */
+.grid-plantilla {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jugador-card {
+    background: var(--color-blanco);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.jugador-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.jugador-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--color-azul-celeste);
+    margin-bottom: 15px;
+}
+
+.jugador-card h3 {
+    font-size: 1.4em;
+    color: var(--color-texto-oscuro);
+}
+
+.jugador-card p {
+    color: var(--color-azul-celeste);
+    font-weight: bold;
+}
+
+/* ============================== */
+/* CONTACTO Y FOOTER     */
+/* ============================== */
+.email-link {
+    font-size: 1.4em;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px 0;
+}
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a {
+    font-size: 2.5em;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: var(--color-blanco);
+}
+
+footer {
+    background-color: #1e2a36;
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 25px;
+}
+
+/* ============================== */
+/* RESPONSIVE (MÓVIL)       */
+/* ============================== */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 71px; /* Altura de la barra de navegación */
+        left: 0;
+        background-color: rgba(44, 62, 80, 0.98);
+        text-align: center;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 0;
+        padding: 20px 0;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    .menu-hamburguesa {
+        display: block;
+    }
+    .hero-content h1 {
+        font-size: 3em;
+    }
+    .hero-content .lema {
+        font-size: 1.5em;
+    }
+    .section h2 {
+        font-size: 2.2em;
+    }
+}
+/* Este código es nuevo, añádelo al final de tu CSS */
+.jugador-card .dorsal {
+    font-size: 1.8em;
+    font-family: var(--font-titulos);
+    font-weight: 900;
+    color: var(--color-dorado);
+    margin-top: 10px;
+    display: block;
+}
