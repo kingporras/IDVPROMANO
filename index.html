@@ -214,3 +214,80 @@
     <script src="script.js"></script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#75bbf0">
+    <link rel="manifest" href="manifest.json">
+
+    <title>Inter de Verdun - App Oficial</title>
+    <meta name="description" content="App oficial del Inter de Verdun para apuntarse a los partidos.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1 class="logo">Inter de Verdun</h1>
+            <div id="user-info" style="display: none;">
+                <span id="user-name"></span>
+                <button id="logout-btn" class="cta-button small">Salir</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="login-container">
+            <h2>FUERZA Y HONOR</h2>
+            <p>Inicia sesión para apuntarte al próximo partido.</p>
+            <button id="login-btn" class="cta-button"><i class="fab fa-google"></i> Iniciar sesión con Google</button>
+        </div>
+
+        <div id="app-container" style="display: none;">
+            <section id="partido" class="section">
+                <h2>Próximo Partido</h2>
+                <div class="partido-card">
+                    <div class="partido-info">
+                        <p class="rival">Inter de Verdun vs [Nombre Rival]</p>
+                        <p class="fecha-hora"><i class="fas fa-calendar-alt"></i> Miércoles, 18 de Junio de 2025 - 21:00h</p>
+                    </div>
+                    <div class="acciones-jugador">
+                        <p>¿Juegas?</p>
+                        <button id="disponible-btn" class="cta-button disponible"><i class="fas fa-check"></i> ¡Me apunto!</button>
+                        <button id="no-disponible-btn" class="cta-button no-disponible"><i class="fas fa-times"></i> No disponible</button>
+                    </div>
+                </div>
+
+                <div class="listas-container">
+                    <div class="lista-convocados">
+                        <h3><i class="fas fa-check-circle"></i> Disponibles (<span id="disponibles-count">0</span>)</h3>
+                        <ul id="lista-disponibles">
+                            </ul>
+                    </div>
+                    <div class="lista-convocados">
+                        <h3><i class="fas fa-times-circle"></i> No Disponibles (<span id="no-disponibles-count">0</span>)</h3>
+                        <ul id="lista-no-disponibles">
+                           </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    
+    <script src="firebase-config.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
